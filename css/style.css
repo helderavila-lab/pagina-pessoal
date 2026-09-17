@@ -1,0 +1,31 @@
+/* Transição suave para a troca de cores */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Definições do Tema Escuro (Azul Marinho) */
+body.tema-escuro {
+    background-color: #0a1929 !important;
+    color: #e8eef5 !important;
+}
+
+/* Ajuste dos cards no modo escuro */
+body.tema-escuro .card {
+    background-color: #0f2942;
+    border-color: #1e3a5f;
+    color: #e8eef5;
+}
+
+header, footer {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+body.tema-escuro header, body.tema-escuro footer {
+    background-color: #071624;
+}

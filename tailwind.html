@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helder Jose Avila - Versão Tailwind</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        // Configuração para permitir o Dark Mode via classe 'dark' no elemento html
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/tailwind-style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 min-h-screen">
+
+    <header class="py-12 px-4 text-center border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 shadow-sm">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Helder Jose Avila</h1>
+        <p class="mt-4 text-xl text-slate-600 dark:text-slate-400">Estudante de Ciência da Computação na UFLA</p>
+
+        <button id="theme-toggle" class="mt-6 px-6 py-2 rounded-full border-2 border-slate-900 dark:border-slate-100 font-medium hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition-colors">
+            Alternar Tema
+        </button>
+    </header>
+
+    <main class="max-w-5xl mx-auto mt-10 px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <section class="p-8 bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-100 dark:border-slate-700">
+                <h2 class="text-2xl font-bold border-b-2 border-indigo-500 pb-2 mb-6">Interesses</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center space-x-3">
+                        <span class="text-indigo-500">▹</span>
+                        <span>Área de Dados</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-indigo-500">▹</span>
+                        <span>Inteligência Artificial</span>
+                    </li>
+                    <li>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-indigo-500">▹</span>
+                            <span>Cibersegurança</span>
+                        </div>
+                        <ul class="mt-2 ml-6 space-y-1 text-sm text-slate-500 dark:text-slate-400">
+                            <li>↳ Pentest</li>
+                            <li>↳ Defesa Cibernética</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold mb-6">Projetos Acadêmicos</h2>
+                <div class="space-y-6">
+                    <article class="p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-l-4 border-indigo-500">
+                        <h3 class="text-xl font-bold">Jogo da Cobrinha (Snake)</h3>
+                        <p class="mt-2 text-slate-600 dark:text-slate-400">Desenvolvido para a disciplina GAC116 - Programação Web.</p>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="mt-12">
+            <h2 class="text-2xl font-bold mb-6">Repositórios no GitHub</h2>
+            <p class="text-slate-600 dark:text-slate-400 mb-6">Dados reais de <a class="underline hover:text-indigo-500" href="https://github.com/helderavila-lab" target="_blank" rel="noopener">github.com/helderavila-lab</a>.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="https://github.com/lucasreissvn/Projeto-Final-Engenharia-De-Software" target="_blank" rel="noopener" class="block p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-bold">Projeto-Final-Engenharia-De-Software</h3>
+                    <p class="mt-1 text-xs text-slate-400">lucasreissvn</p>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Projeto final da disciplina GCC-188 - Engenharia de Software</p>
+                    <span class="inline-block mt-3 text-xs font-medium text-indigo-500">JavaScript</span>
+                </a>
+                <a href="https://github.com/Petrus012/sistema-distribuido-rag" target="_blank" rel="noopener" class="block p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-bold">sistema-distribuido-rag</h3>
+                    <p class="mt-1 text-xs text-slate-400">Petrus012</p>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Sistema distribuído RAG</p>
+                    <span class="inline-block mt-3 text-xs font-medium text-indigo-500">Python</span>
+                </a>
+                <div class="block p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 opacity-80">
+                    <h3 class="text-lg font-bold">ufla-risc-simulador-grupo6-gcc123 <span class="text-xs font-normal text-slate-400">(privado)</span></h3>
+                    <p class="mt-1 text-xs text-slate-400">MarcoTFranco</p>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Simulador RISC — visível apenas para colaboradores</p>
+                    <span class="inline-block mt-3 text-xs font-medium text-indigo-500">Python</span>
+                </div>
+                <a href="https://github.com/helderavila-lab/snake" target="_blank" rel="noopener" class="block p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-bold">snake</h3>
+                    <p class="mt-1 text-xs text-slate-400">helderavila-lab</p>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Jogo da cobrinha em HTML, CSS e JavaScript puro — GAC116 Programação Web</p>
+                    <span class="inline-block mt-3 text-xs font-medium text-indigo-500">CSS</span>
+                </a>
+                <a href="https://github.com/helderavila-lab/projeto_Helder_Avila-" target="_blank" rel="noopener" class="block p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-bold">projeto_Helder_Avila-</h3>
+                    <p class="mt-1 text-xs text-slate-400">helderavila-lab</p>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Repositório para o trabalho prático de Gestão de Versões – Git/GitHub</p>
+                    <span class="inline-block mt-3 text-xs font-medium text-indigo-500">C++ · ⭐ 1</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-16 py-12 bg-slate-100 dark:bg-slate-950 text-center">
+        <h2 class="text-2xl font-bold mb-4">Contato</h2>
+        <p>📧 <strong>Email:</strong> 0123helder@gmail.com</p>
+        <p>📱 <strong>Celular:</strong> +55 35 9860-8260</p>
+    </footer>
+
+    <script src="js/tailwind-theme.js"></script>
+</body>
+</html>
