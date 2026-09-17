@@ -2,6 +2,11 @@
 
 Atividade Prática 2 da disciplina **GAC116 - Programação Web** (UFLA): desenvolvimento de uma página pessoal (portfólio web) utilizando HTML, CSS e JavaScript, em duas versões com frameworks CSS diferentes.
 
+## 🔗 Demo
+
+- **Bootstrap:** https://helderavila-lab.github.io/pagina-pessoal/
+- **Tailwind CSS:** https://helderavila-lab.github.io/pagina-pessoal/tailwind.html
+
 ## Versões
 
 - [`index.html`](index.html) — versão com **Bootstrap**
