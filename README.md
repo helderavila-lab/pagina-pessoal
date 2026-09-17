@@ -28,7 +28,4 @@ As duas versões têm o mesmo conteúdo (interesses, projetos, repositórios do 
     └── tailwind-theme.js     # alternância de tema (Tailwind)
 ```
 
-## Contato
 
-- 📧 0123helder@gmail.com
-- 📱 +55 35 9860-8260
