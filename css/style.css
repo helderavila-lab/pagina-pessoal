@@ -21,6 +21,38 @@ body.tema-escuro .card {
     color: #e8eef5;
 }
 
+/* O Bootstrap usa cores fixas (variáveis CSS) nesses componentes, então
+   precisam ser sobrescritas explicitamente para o tema escuro */
+body.tema-escuro .card-title,
+body.tema-escuro .card-text,
+body.tema-escuro .list-group-item,
+body.tema-escuro h1,
+body.tema-escuro h2,
+body.tema-escuro h3,
+body.tema-escuro h4,
+body.tema-escuro h5,
+body.tema-escuro h6 {
+    color: #e8eef5;
+}
+
+body.tema-escuro .text-muted {
+    color: #9fb3c8 !important;
+}
+
+body.tema-escuro .border,
+body.tema-escuro .border-bottom,
+body.tema-escuro .border-top {
+    border-color: #1e3a5f !important;
+}
+
+body.tema-escuro .table {
+    --bs-table-color: #e8eef5;
+    --bs-table-bg: transparent;
+    --bs-table-border-color: #1e3a5f;
+    --bs-table-hover-bg: #0f2942;
+    --bs-table-hover-color: #e8eef5;
+}
+
 header, footer {
     padding: 40px 0;
     background-color: #f8f9fa;
